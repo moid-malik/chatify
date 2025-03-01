@@ -90,7 +90,7 @@ if not st.session_state.logged_in:
                 st.session_state.logged_in = True
                 st.session_state.username = username
                 st.session_state.emoji = user["emoji"]
-                st.experimental_rerun()
+                st.rerun()
             else:
                 st.error("Invalid credentials")
     with tab2:
@@ -168,7 +168,7 @@ else:
             message = st.chat_input("Type a message...", key="chat_input")
             if message:
                 store_message(st.session_state.username, st.session_state.selected_user, message)
-                st.experimental_rerun()
+                st.rerun()
         else:
             st.sidebar.write("Please select a user to chat with.")
     else:
