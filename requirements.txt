@@ -1,3 +1,4 @@
 streamlit
 pymongo
 streamlit_autorefresh
+python-dotenv
