@@ -76,7 +76,7 @@ if "selected_user" not in st.session_state:
 if "search_query" not in st.session_state:
     st.session_state.search_query = ""
 
-st.title("💬 WhatsApp Clone")
+st.title("💬Chatify")
 
 # Authentication: Login / Register
 if not st.session_state.logged_in:
